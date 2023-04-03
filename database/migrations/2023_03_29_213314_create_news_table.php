@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignIdFor(Categorynews::class);
             $table->string('title');
             $table->string('slug')->unique();
-            $table->string('excerpt');
+            $table->text('excerpt');
             $table->text('body');
             $table->string('image')->nullable();
             $table->timestamp('published_at');
